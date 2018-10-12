@@ -27,23 +27,14 @@ class AbstractMelonOrder():
 
 class DomesticMelonOrder(AbstractMelonOrder):
     """A melon order within the USA."""
+    
     tax = 0.08
-    #def __init__(self, species, qty):
-        #"""Initialize melon order attributes."""
-
-        #self.order_type = "domestic"
-        # self.tax = 0.08
 
 
 class InternationalMelonOrder(AbstractMelonOrder):
     """An international (non-US) melon order."""
+    
     tax = 0.17
-    #def __init__(self, species, qty, country_code):
-        #"""Initialize melon order attributes."""
-
-        #self.order_type = "international"
-        # self.tax = 0.17
-
 
     def get_country_code(self):
         """Return the country code."""
